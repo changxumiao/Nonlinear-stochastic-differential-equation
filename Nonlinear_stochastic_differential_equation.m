@@ -72,6 +72,7 @@ Nx = 50;%统计区间划分区间个数，区间划分得越小，则在该区间上x值的密度越小
 %画出概率分布图
 figure(3)
 plot(xi,c/(num*Nt))%c/(num*Nt)为该区间的密度
+print -f -r800 -djpeg distribution
 title('x的密度函数');
 xlabel('x的取值');
 ylabel('密度');
